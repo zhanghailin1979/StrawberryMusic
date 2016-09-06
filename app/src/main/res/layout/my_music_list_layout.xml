@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="50dp"
+              android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white"/>
+    <ListView
+        android:id="@+id/listView_my_music"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:listSelector="@drawable/list_item_selector"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+    </ListView>
+
+    <!--<com.andraskindler.quickscroll.QuickScroll-->
+    <!--android:id="@+id/quickscroll"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignTop="@+id/listView_my_music"-->
+    <!--android:paddingLeft="10dp"/>-->
+</LinearLayout>

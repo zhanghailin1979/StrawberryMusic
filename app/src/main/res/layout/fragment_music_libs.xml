@@ -1,0 +1,141 @@
+<learning.moliying.com.strawberrymusic.view.UserDefineScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragment.NetMusicLibsFragment">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:layout_marginBottom="5dp"
+            >
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                app:indicator_height="8dp"
+                app:indicator_margin="5dp"
+                app:indicator_width="8dp"
+                app:is_auto_play="true"
+                app:title_background="@color/dark_text_color"
+                app:title_height="30dp"
+                app:title_textcolor="@color/white_text_color"
+                app:title_textsize="15sp"
+                />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/linearLayout_ndb"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:background="@mipmap/ic_classify_img03"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal"
+                      android:padding="10dp">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:adjustViewBounds="true"
+                       android:maxHeight="64dp"
+                       android:maxWidth="64dp"
+                       android:src="@drawable/img_k_chinese"
+            />
+            <TextView
+                android:id="@+id/recommend_item_ndb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="内地榜"
+                android:textColor="@color/white_text_color"
+                android:textSize="24sp"
+            />
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout_gtb"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:background="@mipmap/ic_classify_img01"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal"
+                      android:padding="10dp">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:adjustViewBounds="true"
+                       android:maxHeight="64dp"
+                       android:maxWidth="64dp"
+                       android:src="@drawable/img_k_man"
+            />
+            <TextView
+                android:id="@+id/recommend_item_gtb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="港台榜"
+                android:textColor="@color/white_text_color"
+                android:textSize="24sp"
+            />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout_lxb"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:background="@mipmap/ic_classify_img02"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal"
+                      android:padding="10dp">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:adjustViewBounds="true"
+                       android:maxHeight="64dp"
+                       android:maxWidth="64dp"
+                       android:src="@drawable/img_k_band"
+            />
+            <TextView
+                android:id="@+id/recommend_item_lxb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="流行榜"
+                android:textColor="@color/white_text_color"
+                android:textSize="24sp"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:adjustViewBounds="true"
+                       android:maxHeight="32dp"
+                       android:maxWidth="32dp"
+                       android:src="@mipmap/song_recognition_icon_nodata"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingTop="10dp"
+                      android:paddingBottom="10dp"
+                      android:paddingStart="30dp"
+                      android:paddingEnd="30dp"
+                      android:text="感谢【搜狗音乐】对音乐库的内容的支持，音乐版权均归搜狗音乐所有。"
+                      android:textColor="@color/dark_text_color"
+                      android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</learning.moliying.com.strawberrymusic.view.UserDefineScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="192dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/user_face"
+        fresco:placeholderImage="@mipmap/de_btn_main_personal_information"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true"
+        />
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="20dp"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:text="admin"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/usernameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="20dp"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:text="admin"
+        android:background="@null"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+    <ImageView
+        android:id="@+id/modifyProfileButton"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/person_modify"
+        android:layout_gravity="right|bottom" />
+</FrameLayout>

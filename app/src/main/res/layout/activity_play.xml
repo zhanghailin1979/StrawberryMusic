@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_scenario_drive_bg_up"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="learning.moliying.com.strawberrymusic.ui.PlayActivity">
+<ImageView
+    android:layout_width="28dp"
+    android:layout_height="28dp"
+    android:src="@drawable/ic_back"
+    android:onClick="backMainClick"/>
+    <TextView
+        android:id="@+id/textView1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="歌 名"
+        android:textColor="@color/white_text_color"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView1_album" />
+    <TextView
+        android:id="@+id/textView1_songer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌 者"
+        android:textColor="@color/white_text_color"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView1_title"
+        android:layout_alignLeft="@+id/imageView1_album"
+        android:layout_marginLeft="32dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_Play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView1_songer"
+        android:layout_above="@+id/linearLayout"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/play_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/transparent_color"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabIndicatorColor="@color/white_text_color"
+            app:tabSelectedTextColor="@color/tabSelectedTextColor2"
+            app:tabTextColor="@color/tabTextColor2"
+            android:fillViewport="false"
+            />
+    </LinearLayout>
+
+
+    <SeekBar android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_height="wrap_content"
+        style="@style/mySeekBar"
+        android:layout_above="@+id/linearLayout_seekbar_time"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"/>
+    <RelativeLayout
+        android:id="@+id/linearLayout_seekbar_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/include_playpage_control_bar"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/textView1_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentStart="true"
+            android:text="00:00"
+            android:gravity="center"
+            android:textColor="@color/white_text_color"
+            android:textSize="12sp"/>
+
+        <TextView android:id="@+id/textView1_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="00:00"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white_text_color"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+    <include layout="@layout/playpage_control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/include_playpage_control_bar"/>
+    <ImageView
+        android:id="@+id/imageView_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="32dp"
+        android:maxHeight="32dp"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_listmore_love_normal"
+        android:layout_alignTop="@+id/textView1_title" android:layout_alignEnd="@+id/seekBar1"/>
+
+
+</RelativeLayout>

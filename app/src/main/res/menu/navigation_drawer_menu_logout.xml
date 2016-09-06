@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:menuCategory="alternative">
+        <item
+            android:id="@+id/menu_item_fav"
+            android:icon="@mipmap/ic_fav_normal"
+            android:title="我的收藏"/>
+        <item
+            android:id="@+id/menu_item_playinglist"
+            android:icon="@mipmap/bt_minibar_playinglist_normal"
+            android:title="播放列表"/>
+        <item
+            android:id="@+id/menu_item_listmore"
+            android:icon="@mipmap/ic_listmore_album_normal"
+            android:title="最近播放"/>
+        <item
+            android:id="@+id/loginout"
+            android:icon="@mipmap/ic_listmore_songer_normal"
+            android:title="登录"/>
+    </group>
+</menu>

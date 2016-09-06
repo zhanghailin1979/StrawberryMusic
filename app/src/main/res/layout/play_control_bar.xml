@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imageView1_album"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:roundAsCircle="true"
+            fresco:placeholderImage="@mipmap/app_logo"
+            fresco:placeholderImageScaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1_song_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:text="歌名">
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView2_singer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:text="歌手" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imageButton1_play_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/bt_minibar_playinglist_normal" />
+
+            <ImageButton
+                android:id="@+id/imageButton1_play_pause"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_bg"
+                android:src="@drawable/bt_minibar_image" />
+
+            <ImageButton
+                android:id="@+id/imageButton2_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:background="@drawable/button_bg"
+                android:src="@mipmap/bt_minibar_next_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
